@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derifa Art Florist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 400px;
+            padding: 25px;
+            background: white;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            border-radius: 15px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid #ff6f61;
+            box-shadow: 0 0 15px rgba(255, 111, 97, 0.6);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #ff6f61;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        #link-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px;
+            background: #ff6f61;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .link:hover {
+            background: #e65c55;
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="logo" src="https://i.pinimg.com/474x/5c/32/f9/5c32f9f9d01d3b69a15ef0bf9214b573.jpg" alt="Logo Toko">
+        <h1>DERIFFA ART FLORIST</h1>
+
+        <div id="link-container">
+            <a href="https://maps.app.goo.gl/1xSsqf79mcZFW1v58?g_st=iw" class="link" target="_blank">📍 Lihat di Maps</a>
+            <a href="https://drive.google.com/file/d/13UnBMkEkin_uoY5ijgqGFL4TiOCv1njS/view?usp=drivesdk" class="link" target="_blank">📖 Lihat Katalog Harga</a>
+            <a href="https://wa.me/6285720922297" class="link" target="_blank">📲 Chat via WhatsApp</a>
+        </div>
+    </div>
+</body>
+</html>
